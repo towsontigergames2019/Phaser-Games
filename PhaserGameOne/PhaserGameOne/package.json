@@ -1,0 +1,12 @@
+{
+  "name": "phaser-game-one",
+  "version": "0.0.0",
+  "description": "PhaserGameOne",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
