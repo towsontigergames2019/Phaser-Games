@@ -29,15 +29,26 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="public\javascript\libraries\jquery-3.3.1.min.js" />
+    <Compile Include="public\javascript\libraries\phaser.js" />
     <Compile Include="public\javascript\mainPhaser.js" />
     <Compile Include="server.js" />
     <Content Include="package.json" />
     <Content Include="public\index.html" />
+    <Content Include="public\javascript\assets\bomb.png" />
+    <Content Include="public\javascript\assets\dude.png" />
+    <Content Include="public\javascript\assets\platform.png" />
+    <Content Include="public\javascript\assets\RedButton-Active.png" />
+    <Content Include="public\javascript\assets\RedButton-Hover.png" />
+    <Content Include="public\javascript\assets\sky.png" />
+    <Content Include="public\javascript\assets\star.png" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="public\" />
     <Folder Include="public\javascript\" />
+    <Folder Include="public\javascript\assets\" />
+    <Folder Include="public\javascript\libraries\" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
