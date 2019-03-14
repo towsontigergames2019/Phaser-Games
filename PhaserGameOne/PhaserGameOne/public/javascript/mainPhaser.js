@@ -9,6 +9,9 @@ var config = {
     }
 };
 
+var button;
+var music;
+
 var game = new Phaser.Game(config);
 
 function preload() {
@@ -19,14 +22,20 @@ function preload() {
         'assets/dude.png',
         { frameWidth: 32, frameHeight: 48 }
     );
+
+     this.load.audio('piano', ['javascript/assets/kirby_loop.mp3', 'javascript/assets/kirby_loop.ogg']);
 }
 
 function create() {
     this.add.image(400, 300, 'sky');
     this.add.image(400, 300, 'active-button');
+    music = this.sound.add('piano');
+    music.loop = true;
+    music.play(); 
+
 }
 
 function update() {
+
 }
-
-
+ 

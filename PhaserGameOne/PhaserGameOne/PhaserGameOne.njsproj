@@ -37,6 +37,8 @@
     <Content Include="public\index.html" />
     <Content Include="public\javascript\assets\bomb.png" />
     <Content Include="public\javascript\assets\dude.png" />
+    <Content Include="public\javascript\assets\kirby_loop.mp3" />
+    <Content Include="public\javascript\assets\kirby_loop.ogg" />
     <Content Include="public\javascript\assets\platform.png" />
     <Content Include="public\javascript\assets\RedButton-Active.png" />
     <Content Include="public\javascript\assets\RedButton-Hover.png" />
