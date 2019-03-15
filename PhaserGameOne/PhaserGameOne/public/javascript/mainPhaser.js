@@ -1,3 +1,7 @@
+/**TO-DO:
+ * "isDown" function continously adds score. Find a way so that if you press the key, 
+ * score is counted once per press.
+ * */
 var config = {
     type: Phaser.AUTO,
     width: 800,
@@ -13,6 +17,7 @@ var button;
 var music;
 var cursors;
 var scoreText;
+var score = 0;
 
 var game = new Phaser.Game(config);
 
@@ -60,17 +65,20 @@ function create() {
 
 function update() {
 
-    button.on('pointerdown', function (pointer) {
-        button.anims.play('on', true);
-    });
-
+    var bool = false;
 
 
     if (cursors.space.isDown) {
         button.anims.play('on', true);
+
     }
     else {
         button.anims.play('off', true);
+    }
+
+    if (bool == true) {
+        score += 1;
+        scoreText.setText('clicks: ' + score);
     }
 }
 
