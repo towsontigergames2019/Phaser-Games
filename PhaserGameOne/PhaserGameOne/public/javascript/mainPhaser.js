@@ -59,27 +59,25 @@ function create() {
         frameRate: 20,
         repeat: -1
     });
+
     scoreText = this.add.text(16, 16, 'clicks: 0', { fontSize: '32px', fill: '#000' });
 
+    button.on('pointerdown', function () {
+        button.anims.play('on', true);
+        score += 1;
+        scoreText.setText('Score: ' + score);
+
+    });
+    button.on('pointerup', function () {
+        button.anims.play('off', true);
+
+
+    });
 }
 
 function update() {
 
-    var bool = false;
 
-
-    if (cursors.space.isDown) {
-        button.anims.play('on', true);
-
-    }
-    else {
-        button.anims.play('off', true);
-    }
-
-    if (bool == true) {
-        score += 1;
-        scoreText.setText('clicks: ' + score);
-    }
 }
 
 
