@@ -1,0 +1,9 @@
+{
+  "name": "space-shooter",
+  "version": "0.0.0",
+  "description": "SpaceShooter",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
